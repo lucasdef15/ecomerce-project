@@ -13,6 +13,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/89199e8ced.js" crossorigin="anonymous"></script>
+    <script src="./scripts/products.js"></script>
+    <script src="./scripts/sproduct.js" defer></script>
     <script src="./scripts/script.js" defer></script>
     <title>Document</title>
 </head>
@@ -31,12 +33,20 @@
                 <li><a class="" href="shop.html">Shop</a></li>
                 <li><a class="" href="about.html">about</a></li>
                 <li><a class="" href="contact.html">Contact</a></li>
-                <li><a id="lg-bag" class="" href="cart.html"><i class="fa-sharp fa-solid fa-basket-shopping"></i></a></li>
+                <li>
+                    <a id="lg-bag" class="" href="cart.html">
+                        <i class="fa-sharp fa-solid fa-basket-shopping"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                </li>
                 <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
             </ul>
         </div>
         <div id="mobile">
-            <a class="" href="cart.html"><i class="fa-sharp fa-solid fa-basket-shopping"></i></a>
+            <a href="cart.html">
+                <i class="fa-sharp fa-solid fa-basket-shopping"></i>
+                <span class="cart-count">0</span>
+            </a>
             <i id="bar" class="fas fa-outdent"></i>
         </div>
     </header>
@@ -80,10 +90,10 @@
         <p>Summer collection New Modern Design</p>
         <div class="pro-container">
             <div class="pro">
-                <img src="./img/Products/Meu projeto.png" alt="">
+                <img src="./img/Products/b1000.png" alt="" onclick="window.location.href='./singlePage/spb1000.html'">
                 <div class="description">
                     <span>Adidas</span>
-                    <h5>Cartoon Astronaut Bag</h5>
+                    <h5>Bolsa Femina Florida</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -91,15 +101,15 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>$74</h4>
+                    <h4>$254</h4>
                 </div>
-                <a href="#"><i class="fa-sharp fa-solid fa-cart-plus cart"></i></a>
+                <a class="add-cart"><i class="fa-sharp fa-solid fa-cart-plus cart"></i></a>
             </div>
             <div class="pro">
                 <img src="./img/Products/f9.png" alt="">
                 <div class="description">
                     <span>Adidas</span>
-                    <h5>Cartoon Astronaut Bag</h5>
+                    <h5>Necessaires Varias Estampas</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -107,15 +117,15 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>$74</h4>
+                    <h4>$120</h4>
                 </div>
-                <a href="#"><i class="fa-sharp fa-solid fa-cart-plus cart"></i></a>
+                <a class="add-cart"><i class="fa-sharp fa-solid fa-cart-plus cart"></i></a>
             </div>
             <div class="pro">
                 <img src="./img/Products/f8.png" alt="">
                 <div class="description">
                     <span>Adidas</span>
-                    <h5>Cartoon Astronaut Bag</h5>
+                    <h5>Estojo Estampa Gatos</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -123,15 +133,15 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>$74</h4>
+                    <h4>$54</h4>
                 </div>
-                <a href="#"><i class="fa-sharp fa-solid fa-cart-plus cart"></i></a>
+                <a class="add-cart"><i class="fa-sharp fa-solid fa-cart-plus cart"></i></a>
             </div>
             <div class="pro">
                 <img src="./img/Products/f7.png" alt="">
                 <div class="description">
                     <span>Adidas</span>
-                    <h5>Cartoon Astronaut Bag</h5>
+                    <h5>Bolsa Feminina Estampada</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -139,9 +149,9 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>$74</h4>
+                    <h4>$174</h4>
                 </div>
-                <a href="#"><i class="fa-sharp fa-solid fa-cart-plus cart"></i></a>
+                <a class="add-cart"><i class="fa-sharp fa-solid fa-cart-plus cart"></i></a>
             </div>
             <div class="pro">
                 <img src="./img/Products/f6.png" alt="">
@@ -219,7 +229,7 @@
         <p>Summer collection New Modern Design</p>
         <div class="pro-container">
             <div class="pro">
-                <img src="./img/Products/f2.png" alt="">
+                <img src="./img/Products/m1000.png" alt="">
                 <div class="description">
                     <span>Adidas</span>
                     <h5>Cartoon Astronaut Bag</h5>

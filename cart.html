@@ -14,10 +14,11 @@
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/89199e8ced.js" crossorigin="anonymous"></script>
     <script src="./scripts/script.js" defer></script>
-    <script src="./scripts/cart.js" defer></script>
+    <script src="./scripts/sproduct.js" defer></script>
+    
     <title>Document</title>
 </head>
-<body onload="addProduct()">
+<body>
     <header>
         <a href="#">
             <div class="logo-wrapper">
@@ -31,12 +32,20 @@
                 <li><a class="" href="shop.html">Shop</a></li>
                 <li><a class="" href="about.html">about</a></li>
                 <li><a class="" href="contact.html">Contact</a></li>
-                <li><a class="active" id="lg-bag" class="" href="cart.html"><i class="fa-sharp fa-solid fa-basket-shopping"></i></a></li>
+                <li>
+                    <a class="active" id="lg-bag" class="" href="cart.html">
+                        <i class="fa-sharp fa-solid fa-basket-shopping"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                </li>
                 <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
             </ul>
         </div>
         <div id="mobile">
-            <a class="" href="cart.html"><i class="fa-sharp fa-solid fa-basket-shopping"></i></a>
+            <a class="" href="cart.html">
+                <i class="fa-sharp fa-solid fa-basket-shopping"></i>
+                <span class="cart-count">0</span>
+            </a>
             <i id="bar" class="fas fa-outdent"></i>
         </div>
     </header>
@@ -57,6 +66,9 @@
                     <td>Subtotal</td>
                 </tr>
             </thead>
+            <tbody id="products">
+
+            </tbody>
         </table>
     </section>
     <section id="cart-add" class="section-p1">
@@ -64,7 +76,7 @@
             <h3>Apply Coupon</h3>
             <div>
                 <input type="text" placeholder="Enter your Coupon">
-                <button class="normal">Apply</button>
+                <button data-btn class="normal">Apply</button>
             </div>
         </div>
 
