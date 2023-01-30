@@ -1,25 +1,25 @@
 let products = [
     {
         name: 'Bolsa Femina Florida',
-        tag: 'bolsafeminaflorida',
+        tag: 'b1000',
         price: 254,
         inCart: 0
     },
     {
         name: 'Necessaires Varias Estampas',
-        tag: 'necessairesvariasestampas',
+        tag: 'n1000',
         price: 120,
         inCart: 0
     },
     {
         name: 'Estojo Estampa Gatos',
-        tag: 'estojoestampagatos',
+        tag: 'e1000',
         price: 54,
         inCart: 0
     },
     {
         name: 'Bolsa Feminina Estampada',
-        tag: 'bolsafeminaestampas',
+        tag: 'b1001',
         price: 174,
         inCart: 0
     },
