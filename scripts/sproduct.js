@@ -1,7 +1,6 @@
 const carts = document.querySelectorAll('.add-cart')
 const numbers = document.querySelectorAll('.numbers')
 
-
 carts.forEach((cart, i) => {
     cart.addEventListener('click', () => {
         cartNumbers(products[i])
@@ -9,6 +8,34 @@ carts.forEach((cart, i) => {
     })
 })
 
+function sendMessage() {
+    let cartItems = localStorage.getItem('productsInCart')
+    let formatedProductList = []
+    let productList
+    let message
+
+    cartItems = JSON.parse(cartItems)
+    
+    Object.values(cartItems).forEach(product => {
+        formatedProductList.push((`${product.name}, Quantidade: ${product.inCart}`))
+        
+    })
+    productList = formatedProductList.toString()
+    checkProductListSize = () =>{
+        if(formatedProductList.length > 1){
+            message = `Olá, estou interessado em compras esses produtos: 
+            ${productList}`
+            
+        }else{
+            message = `Olá, estou interessado em compras esse produto: 
+            ${productList}`
+        }
+    }
+    checkProductListSize()
+    var whatsappUrl = "https://api.whatsapp.com/send?phone=+5519995723855&text=" + encodeURIComponent(message);
+    window.open(whatsappUrl);
+
+}
 function onLoadCartNumbers(){
     let productNumbers = localStorage.getItem('cartNumbers')
     if(cartNumbers){
@@ -128,6 +155,9 @@ function removeItems(productTag){
     onLoadCartNumbers()
 }
 
+
+
+
 function changeCartNumber(productTag){
     let element = document.getElementById(`product_${productTag}`)
     let cartItems = localStorage.getItem('productsInCart')
@@ -136,11 +166,30 @@ function changeCartNumber(productTag){
     let rawString = element.children[5].textContent
     let rawNumber = rawString.replace(/([R$,])/g, '').slice(0,rawString.length - 5)
     let productPrice = 0
+    let productArray = []
+    let productList = {}
 
     cartItems = JSON.parse(cartItems)
 
+    Object.values(cartItems).map(product => {
+            productArray.push( productList = {
+                name: product.name,
+                quantity: product.inCart
+        })
+    })
+    console.log(productArray)
+
+
     Object.values(cartItems).forEach(product => {
         if(product.tag == productTag){
+
+            productArray.push( productList = {
+                name: product.name,
+                quantity: product.inCart
+            })
+
+            
+
             if(product.inCart < element.children[4].lastElementChild.valueAsNumber){
                 productPrice = product.price
                 product.inCart += 1
@@ -197,6 +246,8 @@ function calculateTotals(){
         })
     }
 }
+
+
 
 calculateTotals()
 onLoadCartNumbers()
