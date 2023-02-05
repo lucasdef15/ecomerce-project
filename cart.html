@@ -13,9 +13,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/89199e8ced.js" crossorigin="anonymous"></script>
-    
-    
-    <title>Document</title>
+    <script src="./scripts/script.js" defer></script>
+    <script src="./scripts/products.js" defer></script>
+    <script src="./scripts/sproduct.js" defer></script>
+    <title>Rosita Costura Criativa</title>
 </head>
 <body>
     <header>
@@ -28,9 +29,9 @@
         <div>
             <ul class="nav-bar">
                 <li><a class="" href="index.html">Home</a></li>
-                <li><a class="" href="shop.html">Shop</a></li>
-                <li><a class="" href="about.html">about</a></li>
-                <li><a class="" href="contact.html">Contact</a></li>
+                <li><a class="" href="shop.html">Loja</a></li>
+                <li><a class="" href="about.html">Sobre</a></li>
+                <li><a class="" href="contact.html">Contato</a></li>
                 <li>
                     <a class="active" id="lg-bag" class="" href="cart.html">
                         <i class="fa-sharp fa-solid fa-basket-shopping"></i>
@@ -57,11 +58,11 @@
         <table width="100%" id="table">
             <thead>
                 <tr>
-                    <td>Remove</td>
-                    <td>Image</td>
-                    <td>Product</td>
-                    <td>Price</td>
-                    <td>Quantity</td>
+                    <td>Remover</td>
+                    <td>Imagem</td>
+                    <td>Produto</td>
+                    <td>Preço</td>
+                    <td>Quantidade</td>
                     <td>Subtotal</td>
                 </tr>
             </thead>
@@ -72,20 +73,31 @@
     </section>
     <section id="cart-add" class="section-p1">
         <div id="coupon">
-            <h3>Apply Coupon</h3>
+            <h3>Aplicar Cupon de Desconto</h3>
             <div>
-                <input type="text" placeholder="Enter your Coupon">
-                <button data-btn class="normal">Apply</button>
+                <input type="text" placeholder="Ensira Seu Cupon">
+                <button data-btn class="normal">Aplicar</button>
             </div>
         </div>
 
         <div id="subtotal">
-            <h3>Cart Totals</h3>
+            <h3>Totais do Carrinho</h3>
             <table>
                 <tbody id="total-data">
                 </tbody>
             </table>
-            <button onclick="sendMessage()" class="normal">Proceed to checkout</button>
+            <button onclick="sendMessage()" class="normal">Fazer Check-Out</button>
+        </div>
+    </section>
+
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newsText">
+            <h4>Inscreva-se na Newsletter</h4>
+            <p>Receba atualizações por e-mail sobre nossa loja mais recente e <span>ofertas especiais.</span></p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Seu Endereço de E-mail">
+            <button class="normal">Inscrever-se</button>
         </div>
     </section>
 
@@ -95,12 +107,12 @@
                 <img src="./img/Logo/sewing-machine-svgrepo-com.svg" class="logo">
                 <h3>Rosita's Studio</h3>
             </div>
-            <h4>Contact</h4>
-            <p><strong>Address: </strong>Rua Pascholino Canela 258, Águai SP</p>
-            <p><strong>Phone: </strong> +55 19 99210 2121 / +55 19 99210 3248</p>
-            <p><strong>Hours: </strong> 10:00 - 18:00, Mon - Sat</p>
+            <h4>Contato</h4>
+            <p><strong>Endereço: </strong>Rua Pascholino Canela 258, Águai SP</p>
+            <p><strong>Telefone: </strong> +55 19 99210 2121 / +55 19 99210 3248</p>
+            <p><strong>Horario de Atendimento: </strong> 10:00 - 18:00, Mon - Sat</p>
             <div class="follow">
-                <h4>Follow us</h4>
+                <h4>Nos Siga nas Redes Sociais</h4>
                 <div class="icon">
                     <i class="fab fa-facebook-f"></i>
                     <i class="fab fa-twitter"></i>
@@ -111,27 +123,24 @@
             </div>
         </div>
         <div class="col">
-            <h4>About</h4>
-            <a href="#">About Us</a>
-            <a href="#">Delivery Informatgion</a>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms & conditions</a>
-            <a href="#">Contact Us</a>
+            <h4>Sobre</h4>
+            <a href="#">Sobre Nós</a>
+            <a href="#">Entrega de Informção</a>
+            <a href="#">Política de Provacidade</a>
+            <a href="#">Termos & Condições</a>
+            <a href="#">Entre em Contato</a>
         </div>
-        <div class="col">
+        <!-- <div class="col">
             <h4>My Account</h4>
             <a href="#">Sign In</a>
             <a href="#">View Cart</a>
             <a href="#">My wishlist</a>
             <a href="#">Track My Order</a>
             <a href="#">Help</a>
-        </div>
+        </div> -->
     </footer>
     <div class="copyright">
-        <p>&copy; 2023, Lucas Faria</p>
+        <p>&copy; Lucas Faria, 2023</p>
     </div>
-    <script src="./scripts/script.js" defer></script>
-    <script src="./scripts/products.js" defer></script>
-    <script src="./scripts/sproduct.js" defer></script>
 </body>
 </html>

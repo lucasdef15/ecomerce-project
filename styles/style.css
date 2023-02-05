@@ -145,7 +145,7 @@ header{
         width: 100%;
         background-size: cover;
         padding: 0 80px;
-        background-image: url(../img/banner/b4.jpg), radial-gradient(rgba(68, 68, 68, 0.067), rgba(55, 55, 55, 0.149));
+        background-image: url(../img/hero2.png), radial-gradient(rgba(68, 68, 68, 0.067), rgba(55, 55, 55, 0.149));
         background-blend-mode: multiply;
         background-attachment: fixed;
         background-repeat: no-repeat;
@@ -171,23 +171,30 @@ header{
     font-size: 1.2rem;
 }
 #hero button{
-    width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    width: 200px;
     height: 30px;
-    padding: 10px 0 10px 0;
+    padding: 25px 10px 25px 10px;
     line-height: 10px;
     background-color: #222;
     color: #088178;
     border: none;
-    border-radius: 5px;
+    border-radius: 4px;
     font-size: 20px;
     font-family: 'League Spartan', sans-serif;
-    box-shadow: 3px 3px 3px rgba(78, 70, 70, 0.5);
-    transition: box-shadow 250ms ease-in-out, trasform 250ms ease-in-out;
+    font-weight: bold;
+    transition: trasform 250ms ease-in-out, color 250ms ease-in-out, background-color 250ms ease-in-out, border 250ms ease-in-out;
 }
 #hero button:hover{
     cursor: pointer;
     transform: scale(1.025);
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.8);
+    border: 3px solid #088178;
+    background-color: transparent;
+    color: #222;
 }
 #feature{
     display: flex;
@@ -271,10 +278,7 @@ header{
     text-align: start;
     padding: 10px 0; 
 }
-#product1 .pro span{
-    color: #606063;
-    font-size: 12px;
-}
+
 #product1 .pro h5{
     padding-top: 7px;
     color: #1a1a1a;
@@ -308,22 +312,22 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(../img/banner/b1r.jpg);
+    background-image: url(../img/banner/b22.jpg);
     width: 100%;
     height: 40vh;
     background-size: cover;
     background-position: center;
 }
 #banner h4{
-    color: #fff;
+    color: #222;
     font-size: 23px;
-    text-shadow: 2px 2px 8px black;
+    /* text-shadow: 2px 2px 8px black; */
 }
 #banner h2{
-    color: #fff;
+    color: #222;
     font-size: 40px;
     padding: 10px 0;
-    text-shadow: 2px 2px 8px black;
+    /* text-shadow: 2px 2px 8px black; */
 }
 #banner span{
     color: #ef3636;
@@ -465,7 +469,8 @@ header{
 footer{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 20em;
     letter-spacing: 3px;
 }
 footer .col{
@@ -515,7 +520,7 @@ footer a:hover{
 /* Shop Page */
 
 #page-header{
-    background-image: url(../img/banner/b4.jpg);
+    background-image: url(../img/banner/b23.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -637,7 +642,7 @@ footer a:hover{
     align-items: center;
 }
 #about-header img{
-    width: 250%;
+    width: 700px;
     height: auto;
 }
 #about-header div{
@@ -648,7 +653,7 @@ footer a:hover{
 /* Contact Page */
 
 #page-header.contact-header{
-    background-image: url(../img/banner/b3.jpg);
+    background-image: url(../img/banner/b4.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -700,9 +705,9 @@ footer a:hover{
 
 /* Cart Page */
 #page-header.cart-header{
-    background-image: url(../img/banner/b4.jpg);
+    background-image: url(../img/banner/f18.jpg);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 10%;
     background-size: cover;
     background-attachment: fixed;
 }

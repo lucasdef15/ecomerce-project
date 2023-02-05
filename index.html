@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="#">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,8 +12,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/89199e8ced.js" crossorigin="anonymous"></script>
-    
-    <title>Document</title>
+    <script src="./scripts/products.js" defer></script>
+    <script src="./scripts/sproduct.js" defer></script>
+    <script src="./scripts/script.js" defer></script>
+    <link rel="shortcut icon" href="./img/Logo/sewing-machine-svgrepo-com.svg">
+    <title>Rosita Costura Criativa</title>
 </head>
 <body>
     <header>
@@ -28,9 +30,9 @@
             <ul class="nav-bar">
 
                 <li><a class="active" href="index.html">Home</a></li>
-                <li><a class="" href="shop.html">Shop</a></li>
-                <li><a class="" href="about.html">about</a></li>
-                <li><a class="" href="contact.html">Contact</a></li>
+                <li><a class="" href="shop.html">Loja</a></li>
+                <li><a class="" href="about.html">Sobre</a></li>
+                <li><a class="" href="contact.html">Contato</a></li>
                 <li>
                     <a id="lg-bag" class="" href="cart.html">
                         <i class="fa-sharp fa-solid fa-basket-shopping"></i>
@@ -50,48 +52,51 @@
     </header>
     <section id="hero-wrapper">
         <div id="hero">
-            <h4>Trade-in-offer</h4>
-            <h2>Super value deals</h2>
-            <h1>On all products</h1>
-            <p>Save more with coupons & up to 70% off!</p>
-            <button>Shop Now</button>
+            <h4>Mais Estilo Por Menos</h4>
+            <h2>Ofertas Super Valiosas</h2>
+            <h1>Em Todos os Produtos</h1>
+            <p>Economize Mais Com Cupons de Até 70% de Desconto!</p>
+            <a href="./shop.html">
+                <button>Compre Agora</button>
+            </a>
+            
         </div>
     </section>
     <section id="feature" class="section-p1">
         <div class="fe-box">
-            <img src="./img/features/f1.png" alt="">
-            <h6>Free Shipping</h6>
+            <img src="./img/flores/flor9.png" alt="">
+            <h6>Frete Grátis</h6>
         </div>
         <div class="fe-box">
-            <img src="./img/features/f2.png" alt="">
-            <h6>Online Order</h6>
+            <img src="./img/flores/flor2.jpg" alt="">
+            <h6>Compra Online</h6>
         </div>
-        <div class="fe-box">
+        <!-- <div class="fe-box">
             <img src="./img/features/f3.png" alt="">
             <h6>Save Money</h6>
+        </div> -->
+        <div class="fe-box">
+            <img src="./img/flores/flor8.png" alt="">
+            <h6>Promoções</h6>
         </div>
         <div class="fe-box">
-            <img src="./img/features/f4.png" alt="">
-            <h6>Promotions</h6>
+            <img src="./img/flores/flor6.png" alt="">
+            <h6>Boas Compras</h6>
         </div>
         <div class="fe-box">
-            <img src="./img/features/f5.png" alt="">
-            <h6>Happy Sell</h6>
-        </div>
-        <div class="fe-box">
-            <img src="./img/features/f6.png" alt="">
-            <h6>Support</h6>
+            <img src="./img/flores/flor7.png" alt="">
+            <h6>Suporte</h6>
         </div>
     </section>
     <section id="product1" class="section-p1">
-        <h2>Featured Products</h2>
-        <p>Summer collection New Modern Design</p>
+        <h2>Produtos Em Destaque</h2>
+        <p>Coleção de Verão Novo Design Moderno</p>
         <div class="pro-container">
             <div class="pro">
                 <img src="./img/Products/b1000.png" alt="" onclick="window.location.href='./singlePage/spb1000.html'">
                 <div class="description">
-                    <span>Adidas</span>
-                    <h5>Bolsa Femina Florida</h5>
+                    
+                    <h5>Bolsa Professora Com Repartições</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -99,15 +104,15 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>$254</h4>
+                    <h4>R$170,00</h4>
                 </div>
                 <a class="add-cart"><i class="fa-sharp fa-solid fa-cart-plus cart"></i></a>
             </div>
             <div class="pro">
-                <img src="./img/Products/n1000.png" alt="">
+                <img src="./img/Products/n1000.png" alt="" onclick="window.location.href='./singlePage/spn1000.html'">
                 <div class="description">
-                    <span>Adidas</span>
-                    <h5>Necessaires Varias Estampas</h5>
+                    
+                    <h5>Necessaires Tamanho P</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -115,15 +120,15 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>$120</h4>
+                    <h4>R$15,00</h4>
                 </div>
                 <a class="add-cart"><i class="fa-sharp fa-solid fa-cart-plus cart"></i></a>
             </div>
             <div class="pro">
-                <img src="./img/Products/e1000.png" alt="">
+                <img src="./img/Products/e1000.png" alt="" onclick="window.location.href='./singlePage/spe1000.html'">
                 <div class="description">
-                    <span>Adidas</span>
-                    <h5>Estojo Estampa Gatos</h5>
+                    
+                    <h5>Estojo Um Compartimento Branco</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -131,15 +136,15 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>$54</h4>
+                    <h4>R$25,00</h4>
                 </div>
                 <a class="add-cart"><i class="fa-sharp fa-solid fa-cart-plus cart"></i></a>
             </div>
             <div class="pro">
                 <img src="./img/Products/b1001.png" alt="">
                 <div class="description">
-                    <span>Adidas</span>
-                    <h5>Bolsa Feminina Estampada</h5>
+                    
+                    <h5>Bolsa Professora Com Repartições</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -147,15 +152,15 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>$174</h4>
+                    <h4>R$170,00</h4>
                 </div>
                 <a class="add-cart"><i class="fa-sharp fa-solid fa-cart-plus cart"></i></a>
             </div>
             <div class="pro">
-                <img src="./img/Products/f6.png" alt="">
+                <img src="./img/Products/l1000.png" alt="">
                 <div class="description">
-                    <span>Adidas</span>
-                    <h5>Cartoon Astronaut Bag</h5>
+                    
+                    <h5>Lancheira Térmica</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -163,15 +168,15 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>$74</h4>
+                    <h4>R$95,00</h4>
                 </div>
-                <a href="#"><i class="fa-sharp fa-solid fa-cart-plus cart"></i></a>
+                <a class="add-cart"><i class="fa-sharp fa-solid fa-cart-plus cart"></i></a>
             </div>
             <div class="pro">
-                <img src="./img/Products/f1.png" alt="">
+                <img src="./img/Products/e1001.png" alt="">
                 <div class="description">
-                    <span>Adidas</span>
-                    <h5>Cartoon Astronaut Bag</h5>
+                    
+                    <h5>Estojo Miney Um Compartimento Vermelho</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -179,15 +184,15 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>$74</h4>
+                    <h4>R$25,00</h4>
                 </div>
-                <a href="#"><i class="fa-sharp fa-solid fa-cart-plus cart"></i></a>
+                <a class="add-cart"><i class="fa-sharp fa-solid fa-cart-plus cart"></i></a>
             </div>
             <div class="pro">
-                <img src="./img/Products/f4.png" alt="">
+                <img src="./img/Products/e1002.png" alt="">
                 <div class="description">
-                    <span>Adidas</span>
-                    <h5>Cartoon Astronaut Bag</h5>
+                    
+                    <h5>Estojo Mickey Um Compartimento Branco</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -195,15 +200,15 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>$74</h4>
+                    <h4>R$25,00</h4>
                 </div>
-                <a href="#"><i class="fa-sharp fa-solid fa-cart-plus cart"></i></a>
+                <a class="add-cart"><i class="fa-sharp fa-solid fa-cart-plus cart"></i></a>
             </div>
             <div class="pro">
-                <img src="./img/Products/f3.png" alt="">
+                <img src="./img/Products/e1003.png" alt="">
                 <div class="description">
-                    <span>Adidas</span>
-                    <h5>Cartoon Astronaut Bag</h5>
+                    
+                    <h5>Estojo Mickey Um Compartimento Azul</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -211,26 +216,25 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>$74</h4>
+                    <h4>R$25,00</h4>
                 </div>
-                <a href="#"><i class="fa-sharp fa-solid fa-cart-plus cart"></i></a>
+                <a class="add-cart"><i class="fa-sharp fa-solid fa-cart-plus cart"></i></a>
             </div>
         </div>
     </section>
     <section id="banner" class="section-m1">
-        <h4>Repair Services</h4>
-        <h2>Up to <span>70% off</span> - All t-shirts & Acessories</h2>
-        <button class="normal">Explore more</button>
+        <h4>Serviço de Reparo</h4>
+        <h2>Até <span>70% de Desconto</span> - Todas as Necessaires & Bolsas</h2>
+        <button class="normal">Veja Mais</button>
     </section>
     <section id="product1" class="section-p1">
-        <h2>New Arrivals</h2>
-        <p>Summer collection New Modern Design</p>
+        <h2>Peças Novas</h2>
+        <p>Coleção de Verão Novo Design Moderno</p>
         <div class="pro-container">
             <div class="pro">
                 <img src="./img/Products/m1000.png" alt="">
                 <div class="description">
-                    <span>Adidas</span>
-                    <h5>Cartoon Astronaut Bag</h5>
+                    <h5>Mochila Mickey - Bolso 3D Tamanho Grande</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -238,15 +242,15 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>$74</h4>
+                    <h4>R$250,00</h4>
                 </div>
-                <a href="#"><i class="fa-sharp fa-solid fa-cart-plus cart"></i></a>
+                <a class="add-cart"><i class="fa-sharp fa-solid fa-cart-plus cart"></i></a>
             </div>
             <div class="pro">
-                <img src="./img/Products/f18.png" alt="">
+                <img src="./img/Products/n1001.png" alt="">
                 <div class="description">
-                    <span>Adidas</span>
-                    <h5>Cartoon Astronaut Bag</h5>
+                   
+                    <h5>Necessaire Estampa Mandala</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -254,15 +258,15 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>$74</h4>
+                    <h4>R$25,00</h4>
                 </div>
-                <a href="#"><i class="fa-sharp fa-solid fa-cart-plus cart"></i></a>
+                <a class="add-cart"><i class="fa-sharp fa-solid fa-cart-plus cart"></i></a>
             </div>
             <div class="pro">
-                <img src="./img/Products/f17.png" alt="">
+                <img src="./img/Products/n1002.png" alt="">
                 <div class="description">
-                    <span>Adidas</span>
-                    <h5>Cartoon Astronaut Bag</h5>
+                
+                    <h5>Necessaire Estampa Flamingo</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -270,15 +274,15 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>$74</h4>
+                    <h4>R$35,00</h4>
                 </div>
-                <a href="#"><i class="fa-sharp fa-solid fa-cart-plus cart"></i></a>
+                <a class="add-cart"><i class="fa-sharp fa-solid fa-cart-plus cart"></i></a>
             </div>
             <div class="pro">
-                <img src="./img/Products/f16.png" alt="">
+                <img src="./img/Products/n1003.png" alt="">
                 <div class="description">
-                    <span>Adidas</span>
-                    <h5>Cartoon Astronaut Bag</h5>
+                 
+                    <h5>Necessaire Com Forro Impermeavél</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -286,15 +290,15 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>$74</h4>
+                    <h4>R$50,00</h4>
                 </div>
-                <a href="#"><i class="fa-sharp fa-solid fa-cart-plus cart"></i></a>
+                <a class="add-cart"><i class="fa-sharp fa-solid fa-cart-plus cart"></i></a>
             </div>
             <div class="pro">
-                <img src="./img/Products/f15.png" alt="">
+                <img src="./img/Products/n1004.png" alt="">
                 <div class="description">
-                    <span>Adidas</span>
-                    <h5>Cartoon Astronaut Bag</h5>
+                  
+                    <h5>Necessaire Tecido Sintético</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -302,15 +306,15 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>$74</h4>
+                    <h4>R$20,00</h4>
                 </div>
-                <a href="#"><i class="fa-sharp fa-solid fa-cart-plus cart"></i></a>
+                <a class="add-cart"><i class="fa-sharp fa-solid fa-cart-plus cart"></i></a>
             </div>
             <div class="pro">
-                <img src="./img/Products/f14.png" alt="">
+                <img src="./img/Products/e1004.png" alt="">
                 <div class="description">
-                    <span>Adidas</span>
-                    <h5>Cartoon Astronaut Bag</h5>
+               
+                    <h5>Estojo Um Compartimento Tecido Sintético</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -318,15 +322,15 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>$74</h4>
+                    <h4>R$20,00</h4>
                 </div>
-                <a href="#"><i class="fa-sharp fa-solid fa-cart-plus cart"></i></a>
+                <a class="add-cart"><i class="fa-sharp fa-solid fa-cart-plus cart"></i></a>
             </div>
             <div class="pro">
-                <img src="./img/Products/f13.png" alt="">
+                <img src="./img/Products/n1005.png" alt="">
                 <div class="description">
-                    <span>Adidas</span>
-                    <h5>Cartoon Astronaut Bag</h5>
+               
+                    <h5>Necessaire Multiuso</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -334,15 +338,15 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>$74</h4>
+                    <h4>R$35,00</h4>
                 </div>
-                <a href="#"><i class="fa-sharp fa-solid fa-cart-plus cart"></i></a>
+                <a class="add-cart"><i class="fa-sharp fa-solid fa-cart-plus cart"></i></a>
             </div>
             <div class="pro">
-                <img src="./img/Products/f12.png" alt="">
+                <img src="./img/Products/n1006.png" alt="">
                 <div class="description">
-                    <span>Adidas</span>
-                    <h5>Cartoon Astronaut Bag</h5>
+              
+                    <h5>Necessaire Animal Print Sintético</h5>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -350,48 +354,48 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>$74</h4>
+                    <h4>R$35,00</h4>
                 </div>
-                <a href="#"><i class="fa-sharp fa-solid fa-cart-plus cart"></i></a>
+                <a class="add-cart"><i class="fa-sharp fa-solid fa-cart-plus cart"></i></a>
             </div>
         </div>
     </section>
     <section id="sm-banner" class="section-p1">
         <div class="banner-box">
-            <h4>crazy deals</h4>
-            <h2>buy 1 get 1 free</h2>
-            <span>The best classic dress is on a sale ar cara</span>
-            <button class="white">Learn More</button>
+            <h4>Negócios Malucos</h4>
+            <h2>Compre 1 e Ganhe 10% de Desconto</h2>
+            <span>Bolsas e Necessaires Estão em Promoção</span>
+            <button class="white">Ver Mais</button>
         </div>
         <div class="banner-box banner-box2">
-            <h4>Spring/Summer</h4>
-            <h2>upcomming season</h2>
-            <span>The best classic dress is on a sale ar cara</span>
-            <button class="white">Collection</button>
+            <h4>Primavera/Verão</h4>
+            <h2>Próxima Temporada</h2>
+            <span>Os Melhores Produtos você Encontra Aqui</span>
+            <button class="white">Coleção</button>
         </div>
     </section>
     <section id="banner3">
         <div class="banner-box">
-            <h2>SEASONAL SALE</h2>
-            <h3>WINTER COLLECTION -50% OFF</h3>
+            <h2>VENDA DE TEMPORADA</h2>
+            <h3>COLEÇÃO DE INVERNO -50% DE DESCONTO</h3>
         </div>
         <div class="banner-box banner-box2">
-            <h2>SEASONAL SALE</h2>
-            <h3>WINTER COLLECTION -50% OFF</h3>
+            <h2>VENDA DE TEMPORADA</h2>
+            <h3>TODAS AS COLEÇÕES COM -10% DE DESCONTO</h3>
         </div>
         <div class="banner-box banner-box3">
-            <h2>SEASONAL SALE</h2>
-            <h3>WINTER COLLECTION -50% OFF</h3>
+            <h2>VENDA DE TEMPORADA</h2>
+            <h3>COLEÇÃO DE VERÃO -20% DE DESCONTO</h3>
         </div>
     </section>
     <section id="newsletter" class="section-p1 section-m1">
         <div class="newsText">
-            <h4>Sign Up For newsletter</h4>
-            <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
+            <h4>Inscreva-se na Newsletter</h4>
+            <p>Receba atualizações por e-mail sobre nossa loja mais recente e <span>ofertas especiais.</span></p>
         </div>
         <div class="form">
-            <input type="text" placeholder="Your email address">
-            <button class="normal">Sign Up</button>
+            <input type="text" placeholder="Seu Endereço de E-mail">
+            <button class="normal">Inscrever-se</button>
         </div>
     </section>
     <footer class="section-p1">
@@ -400,12 +404,12 @@
                 <img src="./img/Logo/sewing-machine-svgrepo-com.svg" class="logo">
                 <h3>Rosita's Studio</h3>
             </div>
-            <h4>Contact</h4>
-            <p><strong>Address: </strong>Rua Pascholino Canela 258, Águai SP</p>
-            <p><strong>Phone: </strong> +55 19 99210 2121 / +55 19 99210 3248</p>
-            <p><strong>Hours: </strong> 10:00 - 18:00, Mon - Sat</p>
+            <h4>Contato</h4>
+            <p><strong>Endereço: </strong>Rua Pascholino Canela 258, Águai SP</p>
+            <p><strong>Telefone: </strong> +55 19 99210 2121 / +55 19 99210 3248</p>
+            <p><strong>Horario de Atendimento: </strong> 10:00 - 18:00, Mon - Sat</p>
             <div class="follow">
-                <h4>Follow us</h4>
+                <h4>Nos Siga nas Redes Sociais</h4>
                 <div class="icon">
                     <i class="fab fa-facebook-f"></i>
                     <i class="fab fa-twitter"></i>
@@ -416,28 +420,24 @@
             </div>
         </div>
         <div class="col">
-            <h4>About</h4>
-            <a href="#">About Us</a>
-            <a href="#">Delivery Informatgion</a>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms & conditions</a>
-            <a href="#">Contact Us</a>
+            <h4>Sobre</h4>
+            <a href="#">Sobre Nós</a>
+            <a href="#">Entrega de Informção</a>
+            <a href="#">Política de Provacidade</a>
+            <a href="#">Termos & Condições</a>
+            <a href="#">Entre em Contato</a>
         </div>
-        <div class="col">
+        <!-- <div class="col">
             <h4>My Account</h4>
             <a href="#">Sign In</a>
             <a href="#">View Cart</a>
             <a href="#">My wishlist</a>
             <a href="#">Track My Order</a>
             <a href="#">Help</a>
-        </div>
+        </div> -->
     </footer>
     <div class="copyright">
-        <p>&copy; 2023, Lucas Faria</p>
+        <p>&copy; Lucas Faria, 2023</p>
     </div>
-
-    <script src="./scripts/products.js" defer></script>
-    <script src="./scripts/sproduct.js" defer></script>
-    <script src="./scripts/script.js" defer></script>
 </body>
 </html>
