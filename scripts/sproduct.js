@@ -10,6 +10,8 @@ carts.forEach((cart, i) => {
 
 function sendMessage() {
   let cartItems = localStorage.getItem("productsInCart");
+  let productNumbers = localStorage.getItem("cartNumbers");
+  let totalCoast = localStorage.getItem("totalCoast");
   let formatedProductList = [];
   let productList;
   let message;
@@ -44,6 +46,10 @@ function sendMessage() {
     "https://api.whatsapp.com/send?phone=+5519995723855&text=" +
     encodeURIComponent(message);
   window.open(whatsappUrl);
+
+  localStorage.setItem("productsInCart", JSON.stringify({}));
+  localStorage.setItem("cartNumbers", 0);
+  localStorage.setItem("totalCoast", 0);
 }
 function onLoadCartNumbers() {
   let productNumbers = localStorage.getItem("cartNumbers");
@@ -190,7 +196,6 @@ function changeCartNumber(productTag) {
       })
     );
   });
-  console.log(productArray);
 
   Object.values(cartItems).forEach((product) => {
     if (product.tag == productTag) {
@@ -248,22 +253,20 @@ function calculateTotals() {
 
   if (subTotalContainer) {
     subTotalContainer.innerHTML = "";
-    Object.values(cartItems).map((item) => {
-      subTotalContainer.innerHTML = `
-            <tr>
-                <td>Cart Subtotal</td>
-                <td>R$ ${totalCoasts},00</td>
-            </tr>
-            <tr>
-                <td>Shipping</td>
-                <td>Free</td>
-            </tr>
-            <tr>
-                <td><strong>Total</strong></td>
-                <td><strong>R$ ${totalCoasts},00</strong></td>
-            </tr>
-            `;
-    });
+    subTotalContainer.innerHTML = `
+      <tr>
+          <td>Cart Subtotal</td>
+          <td>R$ ${totalCoasts},00</td>
+      </tr>
+      <tr>
+          <td>Shipping</td>
+          <td>Free</td>
+      </tr>
+      <tr>
+          <td><strong>Total</strong></td>
+          <td><strong>R$ ${totalCoasts},00</strong></td>
+      </tr>
+      `;
   }
 }
 
